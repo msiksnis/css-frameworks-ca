@@ -1,2 +1,15 @@
-node_modules/
+# dependencies
+/node_modules
+
+# production
+/build
+
+# misc
 .DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+
+# local env files
+.env

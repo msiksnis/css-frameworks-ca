@@ -42,18 +42,18 @@
       </div>
     </div>
 
-    <!-- Main navbar -->
+    <!-- Mobile navbar -->
     <nav class="fixed-bottom d-md-none bg-black">
       <hr class="m-0" />
       <div class="p-3">
         <div class="d-flex justify-content-between">
-          <a href="#" class="nav-link">
+          <a href="#">
             <img src="assets/icons/home.svg" alt="Home" class="bar-icon" />
           </a>
-          <a href="#" class="nav-link">
+          <a href="#">
             <img src="assets/icons/chat.svg" alt="Chat" class="bar-icon" />
           </a>
-          <a href="#" class="nav-link">
+          <a href="#">
             <img src="assets/icons/groups.svg" alt="Groups" class="bar-icon" />
           </a>
           <a class="nav-item nav-link" href="#"
@@ -62,10 +62,10 @@
               alt="add a brag"
               class="bar-icon"
           /></a>
-          <a href="#" class="nav-link">
+          <a href="#">
             <img src="assets/icons/search.svg" alt="Search" class="bar-icon" />
           </a>
-          <a href="#" class="nav-link">
+          <a href="#">
             <img src="assets/icons/explore.svg" alt="Search" class="bar-icon" />
           </a>
           <a class="nav-item nav-link" href="/profile"
@@ -78,59 +78,33 @@
       </div>
     </nav>
 
-    <!-- <nav class="d-none d-md-flex">
-      <div class="rounded p-4 bg-body bg-opacity-10">
-        <div class="d-flex flex-column justify-content-between">
-          <a href="#" class="nav-link">
-            <img
-              src="assets/icons/home.svg"
-              alt="Home"
-              class="user-image mb-5"
-            />
-          </a>
-          <a href="#" class="nav-link">
-            <img
-              src="assets/icons/search.svg"
-              alt="Search"
-              class="user-image mb-5"
-            />
-          </a>
-          <a href="#" class="nav-link">
-            <img
-              src="assets/icons/groups.svg"
-              alt="Groups"
-              class="user-image mb-5"
-            />
-          </a>
-          <a class="nav-item nav-link" href="#"
-            ><img
-              src="assets/icons/add-brag.svg"
-              alt="add a brag"
-              class="user-image mb-5"
-          /></a>
-          <a href="#" class="nav-link">
-            <img
-              src="assets/icons/notification.svg"
-              alt="Notifications"
-              class="user-image mb-5"
-            />
-          </a>
-          <a href="#" class="nav-link">
-            <img
-              src="assets/icons/explore.svg"
-              alt="Search"
-              class="user-image mb-5"
-            />
-          </a>
-          <a class="nav-item nav-link" href="/profile"
-            ><img
-              src="assets/images/user.svg"
-              alt="user profile"
-              class="user-image"
-          /></a>
-        </div>
-      </div>
-    </nav> -->
+    <!-- Desktop sidebar -->
+    <nav
+      class="d-none d-md-flex flex-column position-fixed top-50 translate-middle-y ms-5"
+    >
+      <a href="#" class="mb-4">
+        <img src="assets/icons/home.svg" alt="Home" class="bar-icon" />
+        <div className=""></div>
+      </a>
+      <a href="#" class="mb-4">
+        <img src="assets/icons/chat.svg" alt="Chat" class="bar-icon" />
+      </a>
+      <a href="#" class="mb-4">
+        <img src="assets/icons/groups.svg" alt="Groups" class="bar-icon" />
+      </a>
+      <a href="#" class="mb-4">
+        <img src="assets/icons/add-brag.svg" alt="add a brag" class="bar-icon"
+      /></a>
+      <a href="#" class="mb-4">
+        <img src="assets/icons/search.svg" alt="Search" class="bar-icon" />
+      </a>
+      <a href="#" class="mb-4">
+        <img src="assets/icons/explore.svg" alt="Search" class="bar-icon" />
+      </a>
+      <a class="nav-item nav-link" href="/profile"
+        ><img src="assets/images/user.svg" alt="user profile" class="bar-icon"
+      /></a>
+    </nav>
 
     <script type="module" src="js/feed.js"></script>
   </body>
