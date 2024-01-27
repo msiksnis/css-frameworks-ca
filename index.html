@@ -3,6 +3,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" rel="stylesheet" href="dist/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Brag'bout</title>
   </head>
   <body>
@@ -12,94 +16,53 @@
       </a>
     </nav>
 
-    <!-- Main navbar -->
-    <nav class="fixed-bottom d-md-none bg-black">
-      <hr class="m-0" />
-      <div class="p-3">
-        <div class="d-flex justify-content-between">
-          <a href="#" class="nav-link">
-            <img src="assets/icons/home.svg" alt="Home" class="bar-icon" />
-          </a>
-          <a href="#" class="nav-link">
-            <img src="assets/icons/chat.svg" alt="Chat" class="bar-icon" />
-          </a>
-          <a href="#" class="nav-link">
-            <img src="assets/icons/groups.svg" alt="Groups" class="bar-icon" />
-          </a>
-          <a class="nav-item nav-link" href="#"
-            ><img
-              src="assets/icons/add-brag.svg"
-              alt="add a brag"
-              class="bar-icon"
-          /></a>
-          <a href="#" class="nav-link">
-            <img src="assets/icons/search.svg" alt="Search" class="bar-icon" />
-          </a>
-          <a href="#" class="nav-link">
-            <img src="assets/icons/explore.svg" alt="Search" class="bar-icon" />
-          </a>
-          <a class="nav-item nav-link" href="/profile"
-            ><img
-              src="assets/images/user.svg"
-              alt="user profile"
-              class="bar-icon"
-          /></a>
+    <!-- Log in section -->
+    <div class="row justify-content-center mt-5 px-3">
+      <div class="col-md-6 col-lg-4">
+        <p class="mb-4 text-center login-header">Have an account?</p>
+        <form action="/feed.html">
+          <div class="mb-4">
+            <input
+              type="text"
+              class="login-form w-100 bg-transparent rounded-5 px-3 py-2"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="position-relative mb-4">
+            <input
+              id="password-field"
+              type="password"
+              class="login-form w-100 bg-transparent rounded-5 px-3 py-2"
+              placeholder="Password"
+              required
+            />
+            <span
+              toggle="#password-field"
+              class="fa fa-fw fa-eye toggle-password opacity-75 position-absolute top-50 translate-middle-y"
+            ></span>
+          </div>
+          <div class="mb-2">
+            <button
+              type="submit"
+              class="px-3 w-100 bg-gradient border-0 rounded-5 py-2"
+            >
+              Sign In
+            </button>
+          </div>
+          <small class="d-flex justify-content-end">
+            <a href="#">Forgot Password</a>
+          </small>
+        </form>
+        <div class="mt-5">
+          <p class="text-center opacity-75">
+            Don't have an account?
+            <a href="#">Sign Up</a>
+          </p>
         </div>
       </div>
-    </nav>
+    </div>
 
-    <nav class="d-none d-md-flex">
-      <div class="rounded p-4 bg-body bg-opacity-10">
-        <div class="d-flex flex-column justify-content-between">
-          <a href="#" class="nav-link">
-            <img
-              src="assets/icons/home.svg"
-              alt="Home"
-              class="user-image mb-5"
-            />
-          </a>
-          <a href="#" class="nav-link">
-            <img
-              src="assets/icons/search.svg"
-              alt="Search"
-              class="user-image mb-5"
-            />
-          </a>
-          <a href="#" class="nav-link">
-            <img
-              src="assets/icons/groups.svg"
-              alt="Groups"
-              class="user-image mb-5"
-            />
-          </a>
-          <a class="nav-item nav-link" href="#"
-            ><img
-              src="assets/icons/add-brag.svg"
-              alt="add a brag"
-              class="user-image mb-5"
-          /></a>
-          <a href="#" class="nav-link">
-            <img
-              src="assets/icons/notification.svg"
-              alt="Notifications"
-              class="user-image mb-5"
-            />
-          </a>
-          <a href="#" class="nav-link">
-            <img
-              src="assets/icons/explore.svg"
-              alt="Search"
-              class="user-image mb-5"
-            />
-          </a>
-          <a class="nav-item nav-link" href="/profile"
-            ><img
-              src="assets/images/user.svg"
-              alt="user profile"
-              class="user-image"
-          /></a>
-        </div>
-      </div>
-    </nav>
+    <script src="/js/password.js"></script>
   </body>
 </html>

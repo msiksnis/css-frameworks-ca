@@ -11,34 +11,10 @@ $cyan: #8eecff;
 $primary-bg: #010100;
 $secondary-bg: #111111;
 $primary-text: #d1d5db;
-$secondary-text: #9ca3af;
+$secondary-text: #33353a;
+$border-color: #9ca3af;
 $not-active-text: #d1d5db48;
-$gradient-border: linear-gradient(to right, #e6a4fd, #fff59f);
-
-$colors: (
-  "blue": $blue,
-  "indigo": $indigo,
-  "purple": $purple,
-  "pink": $pink,
-  "red": $red,
-  "orange": $orange,
-  "yellow": $yellow,
-  "green": $green,
-  "teal": $teal,
-  "cyan": $cyan,
-  "primary-bg": $primary-bg,
-  "secondary-bg": $secondary-bg,
-  "primary-text": $primary-text,
-  "secondary-text": $secondary-text,
-  "not-active-text": $not-active-text,
-  "gradient-border": $gradient-border,
-);
-
-@each $color-name, $color-value in $colors {
-  .text-#{$color-name} {
-    color: $color-value !important;
-  }
-}
+$gradient: linear-gradient(to right, #e6a4fd, #fff59f);
 
 $font-sizes: (
   "xxxs": 0.5rem,

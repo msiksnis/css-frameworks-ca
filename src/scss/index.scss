@@ -40,3 +40,29 @@ a {
   max-width: 45rem;
   margin: 0 auto;
 }
+
+.login-header {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.login-form {
+  height: 50px;
+  border: 1px solid $border-color;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    border-color: #fff;
+  }
+}
+
+.toggle-password {
+  right: 1em;
+}
+
+// .profile-button {
+//   color: $secondary-text;
+// }
