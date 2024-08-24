@@ -3,9 +3,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="Brag'bout - Login page"
+      name="description"
       content="This is the login page for the social media app Brag'bout."
     />
+
     <link type="text/css" rel="stylesheet" href="dist/css/index.css" />
     <link
       rel="stylesheet"
@@ -14,7 +15,7 @@
     <title>Brag'bout</title>
   </head>
   <body>
-    <nav class="navbar px-3 px-lg-5 align-items-end">
+    <nav class="navbar mt-5 px-3 px-lg-5 align-items-end">
       <a class="navbar-brand mx-auto" href="#">
         <img src="assets/images/logo.svg" alt="Logo" />
       </a>
@@ -24,7 +25,7 @@
     <div class="row justify-content-center mt-5 px-3">
       <div class="col-md-6 col-lg-4">
         <p class="mb-4 text-center login-header">Have an account?</p>
-        <form action="/feed.html">
+        <form action="/profile.html">
           <div class="mb-4">
             <input
               type="text"
@@ -33,12 +34,13 @@
               required
             />
           </div>
-          <div class="position-relative mb-4">
+          <div class="position-relative mb-2">
             <input
               id="password-field"
               type="password"
               class="login-form w-100 bg-transparent rounded-5 px-3 py-2"
               placeholder="Password"
+              minlength="8"
               required
             />
             <span
@@ -46,24 +48,20 @@
               class="fa fa-fw fa-eye toggle-password opacity-75 position-absolute top-50 translate-middle-y"
             ></span>
           </div>
-          <div class="mb-2">
-            <button
-              type="submit"
-              class="px-3 w-100 bg-gradient border-0 rounded-5 py-2"
-            >
-              Sign In
-            </button>
-          </div>
-          <small class="d-flex justify-content-end">
+          <small class="d-flex justify-content-end mb-4">
             <a href="#">Forgot Password</a>
           </small>
+          <button
+            type="submit"
+            class="px-3 w-100 bg-gradient border-0 rounded-5 py-2"
+          >
+            Sign In
+          </button>
         </form>
-        <div class="mt-5">
-          <p class="text-center opacity-75">
-            Don't have an account?
-            <a href="#">Sign Up</a>
-          </p>
-        </div>
+        <p class="text-center opacity-75">
+          Don't have an account?
+          <a href="#">Sign Up</a>
+        </p>
       </div>
     </div>
 
