@@ -6,7 +6,6 @@
  * It uses the feed.css file to style the feed page.
  **/
 
-import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import { bragPosts } from "../data.js";
 
 document.addEventListener("DOMContentLoaded", function () {
