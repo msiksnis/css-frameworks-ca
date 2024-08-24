@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   "use strict";
 
-  // Functionality for toggling the password visibility
   var togglePasswordButtons = document.querySelectorAll(".toggle-password");
   togglePasswordButtons.forEach(function (button) {
     button.addEventListener("click", function () {

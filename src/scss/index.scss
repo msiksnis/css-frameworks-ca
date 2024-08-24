@@ -9,18 +9,37 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+  }
 }
 
 .navbar-brand img {
-  height: 40px;
+  height: 50px;
 
   @include media-breakpoint-up(md) {
-    height: 50px;
+    height: 80px;
   }
 }
 
 .bar-icon {
   height: 25px;
+}
+
+.bar-img {
+  height: 45px;
+}
+
+.sidebar-link {
+  &:hover {
+    div {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
 }
 
 // To hide the scrollbar
@@ -59,10 +78,49 @@ a {
   }
 }
 
+.tab-link {
+  &:hover {
+    color: #fff;
+  }
+
+  &.active {
+    background-image: $gradient;
+    color: #000;
+  }
+}
+
 .toggle-password {
   right: 1em;
 }
 
-// .profile-button {
-//   color: $secondary-text;
-// }
+.follow-btn {
+  background-image: $gradient;
+}
+
+.sidebar {
+  padding-top: 180px;
+  height: 600px;
+}
+
+/* Hide all tab content initially */
+.tab-pane {
+  display: none;
+}
+
+.tab-link {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.tab-link.active {
+  background-image: $gradient;
+}
+
+.user-img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}

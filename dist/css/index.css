@@ -11880,18 +11880,32 @@ a {
   color: inherit;
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
 
 .navbar-brand img {
-  height: 40px;
+  height: 50px;
 }
 @media (min-width: 768px) {
   .navbar-brand img {
-    height: 50px;
+    height: 80px;
   }
 }
 
 .bar-icon {
   height: 25px;
+}
+
+.bar-img {
+  height: 45px;
+}
+
+.sidebar-link:hover div {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .slider-section .d-flex.overflow-auto::-webkit-scrollbar {
@@ -11927,8 +11941,47 @@ a {
   border-color: #fff;
 }
 
+.tab-link:hover {
+  color: #fff;
+}
+.tab-link.active {
+  background-image: linear-gradient(to right, #e6a4fd, #fff59f);
+  color: #000;
+}
+
 .toggle-password {
   right: 1em;
+}
+
+.follow-btn {
+  background-image: linear-gradient(to right, #e6a4fd, #fff59f);
+}
+
+.sidebar {
+  padding-top: 180px;
+  height: 600px;
+}
+
+/* Hide all tab content initially */
+.tab-pane {
+  display: none;
+}
+
+.tab-link {
+  color: inherit;
+}
+.tab-link:hover {
+  text-decoration: none;
+}
+
+.tab-link.active {
+  background-image: linear-gradient(to right, #e6a4fd, #fff59f);
+}
+
+.user-img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=index.css.map */
