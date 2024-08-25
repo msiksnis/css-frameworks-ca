@@ -124,3 +124,62 @@ a {
   width: 50px;
   object-fit: cover;
 }
+
+// Modals
+.modal-content {
+  background-color: $card;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  background-color: $card;
+  outline: none;
+  border: 1px solid $border-color;
+
+  &::placeholder {
+    color: $not-active-text;
+  }
+
+  &:focus {
+    background-color: darken($card, 10%);
+    border: 1px solid $border-color;
+    box-shadow: none;
+    color: $primary-text;
+  }
+
+  &:placeholder-shown {
+    // padding-left: 1.5rem;
+  }
+}
+
+.search-button {
+  right: 0;
+
+  img {
+    height: 20px;
+    opacity: 0.5;
+  }
+}
+
+.search-res {
+  color: $primary-text;
+}
+
+.close {
+  color: $not-active-text;
+}
+
+input {
+  &::placeholder {
+    color: $not-active-text;
+  }
+}
+
+input::file-selector-button {
+  background-color: $card !important;
+  color: $not-active-text !important;
+
+  &:active {
+    background-color: darken($card, 15%); // Even darker on click
+  }
+}
