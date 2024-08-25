@@ -2,7 +2,7 @@
 
 ## Overview
 
-Brag'bout is a social media platform that allows users to share their accomplishments and achievements with their friends and family. Users can create an account, post their accomplishments, and view other users' posts. Users can open friends post and start chating or celebrating together with other friends.
+Brag'bout is a social media platform that allows users to share their accomplishments and achievements with their friends and family. Users can create an account, post their accomplishments, and view other users' posts. Users can open friends post and start chatting or celebrating together with other friends.
 
 ## Getting Started
 
