@@ -1,4 +1,4 @@
-![Homepage](./assets//images/feed-page.png)
+![Homepage](./assets//images/profile-page.png)
 
 ## Overview
 
