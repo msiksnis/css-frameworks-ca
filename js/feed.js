@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Initial render of the "Friends' Brags" tab content
+  // Initially render the "Friends' Brags" tab content as the default tab
   renderTabContent("friends");
 
   // Add event listeners to tabs to switch content

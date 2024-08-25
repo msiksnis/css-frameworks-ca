@@ -70,22 +70,22 @@ a {
   border: 1px solid $border-color;
   transition: all 0.2s ease-in-out;
   outline: none;
-  color: #fff;
+  color: $primary-text;
 
   &:hover,
   &:focus {
-    border-color: #fff;
+    border-color: $primary-text;
   }
 }
 
 .tab-link {
   &:hover {
-    color: #fff;
+    color: $primary-text;
   }
 
   &.active {
     background-image: $gradient;
-    color: #000;
+    color: $primary-bg;
   }
 }
 
@@ -146,10 +146,6 @@ a {
     box-shadow: none;
     color: $primary-text;
   }
-
-  &:placeholder-shown {
-    // padding-left: 1.5rem;
-  }
 }
 
 .search-button {
@@ -180,6 +176,6 @@ input::file-selector-button {
   color: $not-active-text !important;
 
   &:active {
-    background-color: darken($card, 15%); // Even darker on click
+    background-color: darken($card, 15%);
   }
 }

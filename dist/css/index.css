@@ -11935,18 +11935,18 @@ a:hover {
   border: 1px solid #4e5157;
   transition: all 0.2s ease-in-out;
   outline: none;
-  color: #fff;
+  color: #d1d5db;
 }
 .login-form:hover, .login-form:focus {
-  border-color: #fff;
+  border-color: #d1d5db;
 }
 
 .tab-link:hover {
-  color: #fff;
+  color: #d1d5db;
 }
 .tab-link.active {
   background-image: linear-gradient(to right, #e6a4fd, #fff59f);
-  color: #000;
+  color: #010100;
 }
 
 .toggle-password {
@@ -12003,6 +12003,7 @@ a:hover {
   box-shadow: none;
   color: #d1d5db;
 }
+
 .search-button {
   right: 0;
 }
