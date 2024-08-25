@@ -37,11 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
         renderPosts(bragPosts, friendsContainer);
         break;
       case "recent":
-        const recentPosts = bragPosts.slice(0, 4);
+        const recentPosts = bragPosts.slice(6, 10);
         renderPosts(recentPosts, recentContainer);
         break;
       case "top":
-        const topPosts = bragPosts.slice(0, 10);
+        const topPosts = bragPosts.slice(3, 13);
         renderPosts(topPosts, topContainer);
         break;
       default:
