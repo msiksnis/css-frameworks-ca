@@ -6,7 +6,6 @@
  * It uses the feed.css file to style the feed page.
  **/
 
-import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import { bragPosts } from "../data.js";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -38,11 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
         renderPosts(bragPosts, friendsContainer);
         break;
       case "recent":
-        const recentPosts = bragPosts.slice(0, 4);
+        const recentPosts = bragPosts.slice(6, 10);
         renderPosts(recentPosts, recentContainer);
         break;
       case "top":
-        const topPosts = bragPosts.slice(0, 10);
+        const topPosts = bragPosts.slice(3, 13);
         renderPosts(topPosts, topContainer);
         break;
       default:
@@ -51,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Initial render of the "Friends' Brags" tab content
+  // Initially render the "Friends' Brags" tab content as the default tab
   renderTabContent("friends");
 
   // Add event listeners to tabs to switch content

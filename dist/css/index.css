@@ -103,7 +103,7 @@
   --bs-highlight-bg: #fff9e5;
   --bs-border-width: 1px;
   --bs-border-style: solid;
-  --bs-border-color: #9ca3af;
+  --bs-border-color: #4e5157;
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
   --bs-border-radius: 0.375rem;
   --bs-border-radius-sm: 0.25rem;
@@ -11932,21 +11932,21 @@ a:hover {
 
 .login-form {
   height: 50px;
-  border: 1px solid #9ca3af;
+  border: 1px solid #4e5157;
   transition: all 0.2s ease-in-out;
   outline: none;
-  color: #fff;
+  color: #d1d5db;
 }
 .login-form:hover, .login-form:focus {
-  border-color: #fff;
+  border-color: #d1d5db;
 }
 
 .tab-link:hover {
-  color: #fff;
+  color: #d1d5db;
 }
 .tab-link.active {
   background-image: linear-gradient(to right, #e6a4fd, #fff59f);
-  color: #000;
+  color: #010100;
 }
 
 .toggle-password {
@@ -11982,6 +11982,54 @@ a:hover {
   height: 50px;
   width: 50px;
   object-fit: cover;
+}
+
+.modal-content {
+  background-color: #0f0f0f;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  background-color: #0f0f0f;
+  outline: none;
+  border: 1px solid #4e5157;
+}
+.search-input::placeholder {
+  color: rgba(146, 151, 159, 0.5568627451);
+}
+.search-input:focus {
+  background-color: black;
+  border: 1px solid #4e5157;
+  box-shadow: none;
+  color: #d1d5db;
+}
+
+.search-button {
+  right: 0;
+}
+.search-button img {
+  height: 20px;
+  opacity: 0.5;
+}
+
+.search-res {
+  color: #d1d5db;
+}
+
+.close {
+  color: rgba(146, 151, 159, 0.5568627451);
+}
+
+input::placeholder {
+  color: rgba(146, 151, 159, 0.5568627451);
+}
+
+input::file-selector-button {
+  background-color: #0f0f0f !important;
+  color: rgba(146, 151, 159, 0.5568627451) !important;
+}
+input::file-selector-button:active {
+  background-color: black;
 }
 
 /*# sourceMappingURL=index.css.map */

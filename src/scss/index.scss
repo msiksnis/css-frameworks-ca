@@ -70,22 +70,22 @@ a {
   border: 1px solid $border-color;
   transition: all 0.2s ease-in-out;
   outline: none;
-  color: #fff;
+  color: $primary-text;
 
   &:hover,
   &:focus {
-    border-color: #fff;
+    border-color: $primary-text;
   }
 }
 
 .tab-link {
   &:hover {
-    color: #fff;
+    color: $primary-text;
   }
 
   &.active {
     background-image: $gradient;
-    color: #000;
+    color: $primary-bg;
   }
 }
 
@@ -123,4 +123,59 @@ a {
   height: 50px;
   width: 50px;
   object-fit: cover;
+}
+
+// Modals
+.modal-content {
+  background-color: $card;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  background-color: $card;
+  outline: none;
+  border: 1px solid $border-color;
+
+  &::placeholder {
+    color: $not-active-text;
+  }
+
+  &:focus {
+    background-color: darken($card, 10%);
+    border: 1px solid $border-color;
+    box-shadow: none;
+    color: $primary-text;
+  }
+}
+
+.search-button {
+  right: 0;
+
+  img {
+    height: 20px;
+    opacity: 0.5;
+  }
+}
+
+.search-res {
+  color: $primary-text;
+}
+
+.close {
+  color: $not-active-text;
+}
+
+input {
+  &::placeholder {
+    color: $not-active-text;
+  }
+}
+
+input::file-selector-button {
+  background-color: $card !important;
+  color: $not-active-text !important;
+
+  &:active {
+    background-color: darken($card, 15%);
+  }
 }
